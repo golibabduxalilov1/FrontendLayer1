@@ -1,0 +1,45 @@
+/* General Navbar Styling */
+.navbar {
+  padding: 15px 0;
+  font-family: "Karla", sans-serif;
+}
+
+/* Ensure the navbar remains fixed at the top */
+.fixed-top {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1030; /* Ensures it stays above other elements */
+}
+
+/* Add some padding to the body to prevent content from hiding under the navbar */
+body {
+  padding-top: 70px; /* Adjust based on navbar height */
+}
+
+/* Navbar Hover Effect */
+.navbar-nav .nav-link {
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #77b122;
+}
+
+/* Shopping Cart Badge */
+.cart-badge {
+  font-size: 12px;
+  padding: 3px 6px;
+}
+
+.col-imp {
+  color: #77b122 !important;
+}
+
+.bg-green {
+  background: #77b122;
+}
+
+.pad-100 {
+  padding: 100px 0;
+}

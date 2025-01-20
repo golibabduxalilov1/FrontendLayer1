@@ -1,0 +1,29 @@
+/* Featured News Image */
+.featured-news {
+  position: relative;
+}
+
+.featured-news img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Overlay Text */
+.overlay-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* News Items */
+.news-item {
+  transition: 0.3s;
+}
+
+.news-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}

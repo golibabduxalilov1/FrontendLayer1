@@ -1,0 +1,25 @@
+/* Feature Icons */
+.feature-icon {
+  font-size: 3rem;
+  color: #77b122;
+  margin-bottom: 10px;
+}
+
+.col-imp {
+  color: #77b122;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Karla", sans-serif;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.main-icon {
+  margin-bottom: 20px !important;
+}

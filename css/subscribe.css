@@ -1,0 +1,46 @@
+/* Fullscreen Background Section */
+.subscribe-section {
+  background: url("../img/form-bg.png") no-repeat center center/cover;
+  width: 100%;
+}
+
+/* Dark Overlay */
+.overlay {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark transparent overlay */
+  padding: 100px;
+}
+
+/* Leaf Icon and Line */
+.bi-leaf-fill {
+  font-size: 24px;
+}
+
+hr {
+  border: 2px solid;
+  width: 50px;
+  margin: 0;
+}
+
+/* Subscription Form */
+.subscribe-form {
+  width: 50%;
+  max-width: 600px;
+  background: white;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.subscribe-form input {
+  flex-grow: 1;
+  border: none;
+  padding: 12px;
+  outline: none;
+}
+
+.subscribe-form button {
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}

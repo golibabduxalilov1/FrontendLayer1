@@ -1,0 +1,18 @@
+/* Leaf Icon and Line */
+.bi-leaf-fill {
+  font-size: 24px;
+}
+
+hr {
+  border: 2px solid;
+  width: 50px;
+  margin: 0;
+}
+
+/* Feature Icons */
+.feature-icon {
+  font-size: 2rem;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}

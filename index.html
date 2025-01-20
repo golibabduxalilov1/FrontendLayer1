@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Navbar with Bootstrap</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- Fonts link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+  <!-- Static Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand fw-bold text-success" href="#">
+        <img src="./img/logo.png.webp" alt="logo">
+      </a>
+
+      <!-- Toggle Button for Mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigation Links -->
+      <div class="collapse navbar-collapse fade-in" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active col-imp" href="#hero-section">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about-section">ABOUT</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown">
+              PAGES
+            </a>
+            <ul class="dropdown-menu animate-dropdown">
+              <li><a class="dropdown-item" href="#">Page 1</a></li>
+              <li><a class="dropdown-item" href="#">Page 2</a></li>
+              <li><a class="dropdown-item" href="#">Page 3</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#featured-products-section">OUR PRODUCT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#farming-practices-section">FARMING PRACTICE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#news-section">NEWS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer-section">CONTACT</a>
+          </li>
+        </ul>
+
+        <!-- Search and Cart Icons -->
+        <div class="d-flex align-items-center">
+          <a href="#" class="me-3 text-dark"><i class="bi bi-search"></i></a>
+          <a href="#" class="position-relative text-dark">
+            <i class="bi bi-cart"></i>
+            <span class="cart-badge position-absolute top-0 start-100 translate-middle badge rounded-pill bg-green">
+              2
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Hero Section -->
+  <section class="hero hero-section mb-lg-5" id="hero-section">
+    <div class="hero-overlay d-flex flex-column justify-content-center align-items-center text-center">
+      <h1 class="hero-title">
+        The Hearth Of The Farm Is The True Center Of Our Universe.
+      </h1>
+      <p class="hero-text">
+        Mauris vestibulum dolor nec lacinia facilisis. Fusce interdum sagittis
+        volutpat. Praesent eget varius ligula, malesuada eleifend purus.
+        Aenean euismod est at mauris mollis ultricies.
+      </p>
+      <a href="#" class="btn but-imp hero-btn">CONTACT US</a>
+    </div>
+  </section>
+
+  <!-- Main Section -->
+  <section class="main-section container text-center  mt-3 pad-100 " id="main-section">
+    <!-- Large Farm Image -->
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+        <img src="./img/2.jpg.webp" alt="Farm Image" class="img-fluid rounded shadow " />
+      </div>
+    </div>
+    <img src="" alt="" />
+    <!-- Feature Icons Section -->
+    <div class="row text-center mt-5">
+      <div class="col-md-2 offset-md-1">
+        <img src="./img/digger.png.webp" alt="digger" class="main-icon" />
+        <h5>Best Services</h5>
+      </div>
+      <div class="col-md-2">
+        <img src="./img/windmill.png.webp" alt="windmill" class="main-icon" />
+        <h5>Farm Experiences</h5>
+      </div>
+      <div class="col-md-2">
+        <img src="./img/cereals.png.webp" alt="cereals" class="main-icon" />
+        <h5>100% Natural</h5>
+      </div>
+      <div class="col-md-2">
+        <img src="./img/tractor.png.webp" alt="tracktor" class="main-icon" />
+        <h5>Farm Equipment</h5>
+      </div>
+      <div class="col-md-2">
+        <img src="./img/sunrise.png.webp" alt="sunrise" class="main-icon" />
+        <h5>Organic Food</h5>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section class="about-section container  pad-100 " id="about-section">
+    <div class="row align-items-center">
+      <!-- Left Side: Text Content -->
+      <div class="col-md-6 about-mar">
+        <p class="text-uppercase text-muted small">About Us</p>
+        <h2 class="mb-3">
+          <span class="col-imp fw-bold">Let Us</span> Tell You Our Story
+        </h2>
+        <div class="d-flex align-items-center mb-3 mb-5">
+          <img src="./img/decor.png.webp" alt="decor" />
+        </div>
+        <p class="text-muted mb-5">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nunc
+          elit, pretium atlanta urna veloci, fermentum malesuda mina. Donec
+          auctor nisl nec neque sagittis, sit amet dapibus pellentesque donal
+          feugiat.
+        </p>
+        <a class="btn but-imp" href="/about">READ MORE</a>
+      </div>
+
+      <!-- Right Side: Circular Image with Video Play Button -->
+      <div class="col-md-6 text-center">
+        <div class="video-container">
+          <img src="./img/circle.careel.png" alt="Video Thumbnail" class="img-fluid rounded-circle" />
+          <a href="#" class="video-play">
+            <i class="bi bi-play-fill"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Produce Section -->
+  <section class="produce-section container  pad-100 " id="produce-section container">
+    <div class="row align-items-center">
+      <!-- Left Side: Image -->
+      <div class="col-md-6">
+        <img src="./img/product.png" alt="Produce Image" class="img-fluid rounded shadow" />
+      </div>
+
+      <!-- Right Side: Text & Features -->
+      <div class="col-md-6 ps-5">
+        <p class="text-uppercase text-muted small">What We Do</p>
+        <h1>
+          <span class="col-imp fw-bold">Our Produce</span> Is Mainstay
+          For Us
+        </h1>
+        <div class="d-flex align-items-center mb-3">
+          <img src="./img/decor.png.webp" alt="">
+        </div>
+        <p class="text-muted">
+          Mauris fermentum nunc quis massa lacinia consequat. Suspendisse orci
+          magna, pharetra sedonia risus ut, elementum mollis nisi. Nunc in
+          sapien turpis. Donec egeto david orci pulvinar ultrices.
+        </p>
+
+        <!-- Feature Items -->
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <i class="bi bi-flower1 col-imp feature-icon"></i>
+            <h5>Fruit & Vegetable</h5>
+            <p class="text-muted small">
+              Intiam eu sagittis est, aster cosmo lacini libero.
+            </p>
+          </div>
+          <div class="col-md-6 mb-3">
+            <i class="bi bi-egg-fried col-imp feature-icon"></i>
+            <h5>Meat & Eggs</h5>
+            <p class="text-muted small">
+              Intiam eu sagittis est, aster cosmo lacini libero.
+            </p>
+          </div>
+          <div class="col-md-6 mb-3">
+            <i class="bi bi-basket3 col-imp feature-icon"></i>
+            <h5>Milk & Cheese</h5>
+            <p class="text-muted small">
+              Intiam eu sagittis est, aster cosmo lacini libero.
+            </p>
+          </div>
+          <div class="col-md-6 mb-3">
+            <i class="bi bi-flower2 col-imp feature-icon"></i>
+            <h5>Rice & Corn</h5>
+            <p class="text-muted small">
+              Intiam eu sagittis est, aster cosmo lacini libero.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products Section -->
+  <section class="featured-products-section container  text-center pad-100 " id="featured-products-section">
+    <p class="text-uppercase text-muted small">Featured Products</p>
+    <h2>
+      <span class="col-imp fw-bold">Our Product</span> Are Highest
+      Quality
+    </h2>
+    <div class="d-flex align-items-center justify-content-center mb-4">
+      <img src="./img/decor2.png.webp" alt="decor2">
+    </div>
+
+    <!-- Product Grid -->
+    <div class="row">
+      <!-- Product 1 -->
+      <div class="col-md-3">
+        <div class="product-card">
+          <span class="badge bg-success">HOT</span>
+          <img src="./img/p1.jpg.webp" alt="Strawberry" />
+          <h5>Strawberry</h5>
+          <p class="price">$17.99</p>
+          <div class="product-actions">
+            <button class="btn btn-light"><i class="bi bi-heart"></i></button>
+            <button class="btn btn-light"><i class="bi bi-cart"></i></button>
+            <button class="btn btn-light">
+              <i class="bi bi-arrow-left-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Product 2 -->
+      <div class="col-md-3">
+        <div class="product-card">
+          <img src="./img/p2.jpg.webp" alt="Baked Breads" />
+          <h5>Baked Breads</h5>
+          <p class="price">$9.99</p>
+          <div class="product-actions">
+            <button class="btn btn-light"><i class="bi bi-heart"></i></button>
+            <button class="btn btn-light"><i class="bi bi-cart"></i></button>
+            <button class="btn btn-light">
+              <i class="bi bi-arrow-left-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Product 3 -->
+      <div class="col-md-3">
+        <div class="product-card">
+          <img src="./img/p3.jpg.webp" alt="Prime Beef" />
+          <h5>Prime Beef</h5>
+          <p class="price">$59.99</p>
+          <div class="product-actions">
+            <button class="btn btn-light"><i class="bi bi-heart"></i></button>
+            <button class="btn btn-light"><i class="bi bi-cart"></i></button>
+            <button class="btn btn-light">
+              <i class="bi bi-arrow-left-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Product 4 -->
+      <div class="col-md-3">
+        <div class="product-card">
+          <span class="badge bg-danger">SALE</span>
+          <img src="img/p4.jpg.webp" alt="Pure Honey" />
+          <h5>Pure Honey</h5>
+          <p class="price">
+            <s class="text-muted">$29.99</s> <strong>$19.99</strong>
+          <div class="product-actions">
+            <button class="btn btn-light"><i class="bi bi-heart"></i></button>
+            <button class="btn btn-light"><i class="bi bi-cart"></i></button>
+            <button class="btn btn-light">
+              <i class="bi bi-arrow-left-right"></i>
+            </button>
+          </div>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Store Button -->
+    <div class="mt-4">
+      <a href="#" class="btn but-imp">GO TO STORE</a>
+    </div>
+  </section>
+
+  <!-- Subscribe Section -->
+  <section class="subscribe-section " id="subscribe-section">
+    <div class="overlay d-flex flex-column justify-content-center align-items-center text-center">
+      <p class="text-uppercase text-light small">What We Do</p>
+      <h2 class="text-white fw-bold mb-3">
+        Our <span class="col-imp">Produce</span> Is Mainstay For Us
+      </h2>
+      <div class="d-flex align-items-center justify-content-center mb-3">
+        <hr class="border-success w-25 me-2" />
+        <img src="./img/logo.webp" alt="" />
+        <hr class="border-success w-25 ms-2" />
+      </div>
+      <p class="text-white text-center w-50 mb-5">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at
+        diam convallis ligula cursus bibendum sed at enim.
+      </p>
+
+      <!-- Subscription Form -->
+      <form class="d-flex subscribe-form">
+        <input type="email" class="form-control" placeholder="Enter your email" required />
+        <button type="submit" class="btn but-imp">SUBSCRIBE</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Farming Practices Section -->
+  <section class="farming-practices-section container  text-center pad-100 " id="farming-practices-section">
+    <p class="text-uppercase text-muted small">Make the green world</p>
+    <h2>
+      <span class="col-imp fw-bold">Farming Practices</span> To Preserve Land & Water
+    </h2>
+    <div class="d-flex align-items-center justify-content-center mb-4">
+      <img src="./img/decor2.png.webp" alt="decor2">
+    </div>
+
+    <div class="row">
+      <!-- First Practice -->
+      <div class="col-md-4">
+        <div class="practice-card">
+          <img src="./img/14.jpg.webp" alt="Rice Cultivation" class="img-fluid rounded" />
+          <div class="circle-image">
+            <img src="./img/cereal.png.webp" alt="Rice Icon" />
+          </div>
+          <h6 class="text-muted title-pcard">Farming practice for</h6>
+          <h4 class="fw-bold">Improved Rice Cultivation</h4>
+          <p class="text-muted">
+            Donec nec justo eget felis facilisis fermentum. Aliquam porttitor
+            mauris sit amet orci.
+          </p>
+        </div>
+      </div>
+
+      <!-- Second Practice -->
+      <div class="col-md-4">
+        <div class="practice-card">
+          <img src="./img/13.jpg.webp" alt="Soil Improvement" class="img-fluid rounded" />
+          <div class="circle-image">
+            <img src="./img/sprout.png.webp" alt="Soil Icon" />
+          </div>
+          <h6 class="text-muted title-pcard">Farming practice for</h6>
+          <h4 class="fw-bold">Soil Improvement Techniques</h4>
+          <p class="text-muted">
+            Donec nec justo eget felis facilisis fermentum. Aliquam porttitor
+            mauris sit amet orci.
+          </p>
+        </div>
+      </div>
+
+      <!-- Third Practice -->
+      <div class="col-md-4">
+        <div class="practice-card">
+          <img src="./img/14.jpg.webp" alt="Fruit Farming" class="img-fluid rounded" />
+          <div class="circle-image">
+            <img src="./img/vegetable.png.webp" alt="Fruit Icon" />
+          </div>
+          <h6 class="text-muted title-pcard">Farming practice for</h6>
+          <h4 class="fw-bold">Intensive Fruit Farming</h4>
+          <p class="text-muted">
+            Donec nec justo eget felis facilisis fermentum. Aliquam porttitor
+            mauris sit amet orci.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Section -->
+  <section class="testimonial-section " id="testimonial-section">
+    <div class="overlay d-flex flex-column justify-content-center align-items-center text-center">
+      <div class="container">
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- Testimonial 1 -->
+            <div class="carousel-item active ">
+              <div class="d-flex">
+                <div class="quote-icon col-imp fs-1">
+                  <img src="./img/quote.png.webp" alt="">
+                </div>
+
+                <h5 class="testimonial-text text-white">
+                  "Thank you for your organic products. My children like your products and they use for breakfast. We
+                  are
+                  loving the pure milk, freshly fruit and of course our staple, Brown Rice Bread. Your Gluten Free
+                  breads
+                  truly make me feel
+                  lighter and uplifted. It's the only bread I plan to eat for the rest of my life. I will use them for
+                  many years."
+                </h5>
+              </div>
+
+              <div class="testimonial-author d-flex align-items-center justify-content-center">
+                <img src="./img/16.jpg.webp" alt="Customer" class="rounded-circle">
+                <div class="text-start ms-3">
+                  <h5 class="text-white fw-bold">Mrs Lara Sullivan</h5>
+                  <h6 class="col-imp m-0">Customer</h6>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="carousel-item">
+              <div class="d-flex">
+                <div class="quote-icon col-imp fs-1">
+                  <img src="./img/quote.png.webp" alt="">
+                </div>
+
+                <h5 class="testimonial-text text-white">
+                  "Thank you for your organic products. My children like your products and they use for breakfast. We
+                  are
+                  loving the pure milk, freshly fruit and of course our staple, Brown Rice Bread. Your Gluten Free
+                  breads
+                  truly make me feel
+                  lighter and uplifted. It's the only bread I plan to eat for the rest of my life. I will use them for
+                  many years."
+                </h5>
+              </div>
+
+              <div class="testimonial-author d-flex align-items-center justify-content-center">
+                <img src="./img/16.jpg.webp" alt="Customer" class="rounded-circle">
+                <div class="text-start ms-3">
+                  <h5 class="text-white fw-bold"> Lara Sullivan</h5>
+                  <h6 class=" m-0 col-imp">Customer</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+            data-bs-slide="prev">
+            <i class="bi bi-arrow-left-circle fs-3 text-white"></i>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+            data-bs-slide="next">
+            <i class="bi bi-arrow-right-circle fs-3 text-white"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="form-section container  pad-100 " id="form-section">
+    <div class="row align-items-center">
+      <!-- Left Side: Contact Form -->
+      <div class="col-md-6">
+        <p class="text-uppercase text-muted small">Contact Now</p>
+        <h2><span class="col-imp fw-bold">Get In Touch</span> With Us</h2>
+        <div class="d-flex align-items-center mb-3">
+          <img src="./img/decor.png.webp" alt="">
+        </div>
+
+        <form id="contact-form">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="col-md-6">
+              <input type="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="col-12">
+              <input type="text" class="form-control" placeholder="Your Subject" required>
+            </div>
+            <div class="col-12">
+              <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn but-imp w-100">SEND MESSAGE</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- Right Side: Google Map -->
+      <div class="col-md-6 map" style="height: 480px;">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154.858134856195!2d-88.2621086846829!3d41.7606103792348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880efeb5b3575d2b%3A0x5b4dc7e5b5dc5eb!2sE%20New%20York%20St%2C%20Aurora%2C%20IL%2C%20USA!5e0!3m2!1sen!2s!4v1705648145678"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- News Section -->
+  <section class="news-section container  pad-100 " id="news-section">
+    <div class="row">
+      <!-- Left Side: Featured Article -->
+      <div class="col-12 col-lg-6 mb-5">
+        <div class="featured-news position-relative">
+          <img src="./img/17.jpg.webp" alt="Vineyard" class="img-fluid rounded shadow">
+          <div class="overlay-text">
+            <small class="text-light">Post on 18 Aug 2018 / Carlos Bacca</small>
+            <h4 class="fw-bold text-white">Why innovation is key to maintaining our export market share</h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side: News Articles -->
+      <div class="col-12 col-lg-6 mb-100">
+        <div class="news-item p-3 mb-3 bg-white rounded shadow-sm">
+          <small class="text-muted">Post on 18 Aug 2018 / Peter Crough</small>
+          <h5 class="fw-bold">Rising cattle supplies see beef export lifted</h5>
+          <p class="text-muted">Maecenas facilisis quam orci, vel porttitor arcu egestas eu...</p>
+        </div>
+        <div class="news-item p-3 mb-3 bg-white rounded shadow-sm">
+          <small class="text-muted">Post on 18 Aug 2018 / Peter Crough</small>
+          <h5 class="fw-bold">Cattle marts: Cows take a hit at the ringside</h5>
+          <p class="text-muted">Maecenas facilisis quam orci, vel porttitor arcu egestas eu...</p>
+        </div>
+        <div class="news-item p-3 mb-3 bg-white rounded shadow-sm">
+          <small class="text-muted">Post on 18 Aug 2018 / Peter Crough</small>
+          <h5 class="fw-bold">Malting barley price set to commence</h5>
+          <p class="text-muted">Maecenas facilisis quam orci, vel porttitor arcu egestas eu...</p>
+        </div>
+        <div class="news-item p-3 mb-3 bg-white rounded shadow-sm">
+          <small class="text-muted">Post on 18 Aug 2018 / Peter Crough</small>
+          <h5 class="fw-bold">Cattle marts: Cows take a hit at the ringside</h5>
+          <p class="text-muted">Maecenas facilisis quam orci, vel porttitor arcu egestas eu...</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer-section " id="footer-section">
+    <div class="overlay d-flex flex-column justify-content-center align-items-center">
+      <div class="container py-5">
+        <div class="row text-white">
+          <!-- Company Info -->
+          <div class="col-md-4">
+
+            <img src="./img/logo2.png.webp" alt="" class="mb-4">
+            <p class="footer-p mb-3 w-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In act honcus risus
+              atiner
+              Pellentesque risus.
+            </p>
+            <p><i class="bi bi-geo-alt-fill col-imp"></i> 120 Raymond Rd, New York</p>
+            <p><i class="bi bi-envelope-fill col-imp"></i> info.deercreative@gmail.com</p>
+            <p><i class="bi bi-telephone-fill col-imp"></i> +84 223 9000</p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-md-3">
+            <h5 class="fw-bold">QUICK LINK</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Purchase</a></li>
+              <li><a href="#">Shipping</a></li>
+              <li><a href="#">Return</a></li>
+              <li><a href="#">Payments</a></li>
+              <li><a href="#">Guide</a></li>
+              <li><a href="#">News</a></li>
+            </ul>
+          </div>
+
+          <!-- Recent News -->
+          <div class="col-md-3">
+            <h5 class="fw-bold">RECENT NEWS</h5>
+            <div class="recent-news-item d-flex align-items-center mb-4">
+              <img src="./img/4.jpg.webp" alt="News" class="news-thumbnail">
+              <div class="ms-3">
+                <p class="m-0"><a href="#">WA's largest farming business on the market</a></p>
+                <small>18 Aug 2018</small>
+              </div>
+            </div>
+            <div class="recent-news-item d-flex align-items-center mb-4">
+              <img src="./img/5.jpg.webp" alt="News" class="news-thumbnail">
+              <div class="ms-3">
+                <p class="m-0"><a href="#">Beef retail prices hit a record</a></p>
+                <small>18 Aug 2018</small>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Media -->
+          <div class="col-md-2">
+            <h5 class="fw-bold">STAY CONNECTED</h5>
+            <ul class="list-unstyled">
+              <li><i class="bi bi-facebook col-imp"></i> <a href="#">Facebook</a></li>
+              <li><i class="bi bi-twitter col-imp"></i> <a href="#">Twitter</a></li>
+              <li><i class="bi bi-pinterest col-imp"></i> <a href="#">Pinterest</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

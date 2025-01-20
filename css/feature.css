@@ -1,0 +1,55 @@
+/* Leaf Icon and Line */
+.bi-leaf-fill {
+  font-size: 24px;
+}
+
+hr {
+  border: 2px solid;
+  width: 25%;
+  margin: 0;
+}
+
+/* Product Cards */
+.product-card {
+  position: relative;
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Images */
+.product-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Product Price */
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* Product Labels */
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+/* Product Actions */
+.product-actions {
+  margin-top: 10px;
+}
+
+.product-actions .btn {
+  margin: 5px;
+}

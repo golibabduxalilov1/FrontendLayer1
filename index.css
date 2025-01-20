@@ -1,0 +1,16 @@
+@import url("./css/navbar.css");
+@import url("./css/hero.css");
+@import url("./css/main.css");
+@import url("./css/about.css");
+@import url("./css/feature.css");
+@import url("./css/form.css");
+@import url("./css/footer.css");
+@import url("./css/news.css");
+@import url("./css/paractise-card.css");
+@import url("./css/pruduct.css");
+@import url("./css/subscribe.css");
+@import url("./css/testimonial.css");
+
+body {
+  font-family: "Karla", sans-serif;
+}

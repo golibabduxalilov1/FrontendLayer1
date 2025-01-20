@@ -1,0 +1,25 @@
+/* Leaf Icon and Line */
+.bi-leaf-fill {
+  font-size: 24px;
+}
+
+hr {
+  border: 2px solid;
+  width: 50px;
+  margin: 0;
+}
+
+/* Contact Form */
+.form-control {
+  border-radius: 5px;
+  padding: 10px;
+}
+
+textarea.form-control {
+  resize: none;
+}
+
+.map {
+  height: 480px;
+  flex: 0 0 50% 0;
+}
